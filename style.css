@@ -1,0 +1,660 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/* ============================
+        HomePage styles 
+   ============================*/
+.first-page {
+  background-color: rgb(42 78 48);
+  color: antiquewhite;
+  margin: 40px 120px;
+  border-radius: 20px;
+  height: 650px;
+  display: flex;
+}
+.left_side,
+.right_side {
+  width: 50%;
+}
+.content_left {
+  padding: 10px 80px;
+  margin: 75px 0;
+}
+.left_side_title {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  margin: 0;
+}
+.left_side_text {
+  font-size: 20px;
+  width: 529px;
+  margin-top: 40px;
+}
+
+.live_btn {
+  padding: 20px 30px;
+  color: whitesmoke;
+  background-color: red;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  margin-top: 30px;
+}
+.right_side img {
+  height: 600px;
+  padding-left: 20px;
+  margin-top: 50px;
+}
+
+/*========================== 
+Second Page Events styles
+============================ */
+
+.second_page {
+  color: antiquewhite;
+  margin: 50px 120px;
+  display: flex;
+}
+.second_page_left {
+  height: 350px;
+  background-color: rgb(42 78 48);
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.event {
+  margin: auto;
+}
+.event_list {
+  margin-top: 20px;
+}
+.second_page_left a {
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(245, 239, 239);
+  padding: 22px 27px;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+}
+.event_list .active_btn {
+  background-color: red;
+  margin-bottom: 20px;
+}
+.second_page_right {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.card_items {
+  border: 2px solid rgb(110, 105, 105);
+  border-radius: 20px;
+  text-align: center;
+}
+.card_items img {
+  width: 100%;
+}
+.card_details {
+  margin: 0 20px;
+  text-align: left;
+}
+.transfer {
+  color: #000000b8;
+  padding: 10px 21px;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 2px solid #00000080;
+}
+.card_text {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.card_info {
+  color: #44413d;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.clock {
+  margin-right: 10px;
+}
+.message {
+  margin-left: 20px;
+}
+.chatbox {
+  margin-right: 10px;
+}
+
+/* Website 2 design */
+.upcoming_event {
+  text-align: center;
+}
+.second_page_right_event {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.upcoming_event_menu {
+  border: 2px solid #44413d88;
+  border-radius: 10px;
+}
+.upcoming_event_items {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.upcoming_event_items img {
+  margin: 10px auto;
+}
+.upcoming_event_items p {
+  color: #000;
+  font-size: 20px;
+}
+.upcoming_event_text {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+.upcoming_event_info {
+  color: #44413d;
+}
+
+/* ===============================
+           Footer Design  
+==================================*/
+footer {
+  background-color: rgb(42 78 48);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 450px;
+}
+
+.footer_text {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  padding: 150px 0 30px 0;
+  margin: 0;
+}
+hr {
+  width: 80%;
+}
+ul {
+  list-style: none;
+  color: rgba(236, 230, 222, 0.479);
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+ul li {
+  font-size: 18px;
+  margin-right: 25px;
+}
+/* ================================
+      social icon design  
+===================================*/
+.icon_list {
+  display: flex;
+  justify-content: center;
+}
+.s_icon {
+  margin-right: 30px;
+  font-size: 30px;
+  color: aliceblue;
+  padding: 30px 0;
+}
+/* =========================================
+              Responsive design
+============================================  */
+
+/* =================
+      first page  
+====================*/
+
+@media only screen and (max-width: 480px) {
+  .first-page {
+    margin: 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .left_side,
+  .right_side {
+    width: 100%;
+  }
+  .content_left {
+    padding: 0 10px;
+    text-align: center;
+    margin: 0;
+  }
+  .left_side_title {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 30px auto;
+  }
+  .left_side_text {
+    font-size: 18px;
+    max-width: 100%;
+    margin: 0;
+  }
+  .live_btn {
+    padding: 10px 15px;
+    margin: 50px 0;
+    font-size: 15px;
+  }
+  .right_side {
+    text-align: center;
+  }
+  .right_side .bannker_image {
+    margin: 0 auto;
+  }
+
+  .right_side img {
+    width: 80%;
+    height: 70%;
+    margin: 0;
+    padding: 0;
+  }
+  /* =================
+        second page  
+      ==================*/
+  .second_page {
+    color: antiquewhite;
+    margin: 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .second_page_left {
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+  }
+  .event {
+    margin: 0 auto;
+  }
+  .second_page_left a {
+    font-size: 20px;
+    padding: 15px 30px;
+    border: 1px solid #44413d;
+  }
+
+  .second_page_right {
+    width: 100%;
+  }
+  .card {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .card_items {
+    border: 1px solid rgba(110, 105, 105, 0.685);
+  }
+
+  .transfer {
+    margin-top: 25px;
+    color: #000000ef;
+    font-weight: bold;
+    padding: 10px 25px;
+    font-size: 20px;
+    border: 2px solid #44413d;
+  }
+  .card_text {
+    width: 90%;
+    color: rgba(0, 0, 0, 0.699);
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .card_info {
+    font-size: 20px;
+    margin: 30px 0px;
+  }
+  .display_btn {
+    display: none;
+  }
+  /* website 2 design  */
+
+  .second_page_right_event {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ======================
+  Footer styles  
+  =========================*/
+
+  footer {
+    height: auto;
+    width: 100%;
+  }
+  .footer_details {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .footer_text {
+    padding: 30px 0;
+  }
+  hr {
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  ul li {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  /* social icon styles  */
+
+  .s_icon {
+    font-size: 30px;
+    margin: 0;
+  }
+  .icon {
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .first-page {
+    margin: 30px 40px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .left_side {
+    width: 100%;
+  }
+  .right_side {
+    width: 100%;
+  }
+  .content_left {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 20px;
+    text-align: center;
+  }
+  .left_side_title {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 50px;
+    margin: 0;
+    padding-top: 40px;
+  }
+  .left_side_text {
+    font-size: 18px;
+    width: 90%;
+    padding-left: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .live_btn {
+    padding: 15px 22px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .right_side .bannker_image {
+    margin: 0 auto;
+  }
+  .right_side img {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+  }
+  /*========================== 
+    Second Page Events styles
+    ============================ */
+
+  .second_page {
+    color: antiquewhite;
+    margin: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .second_page_left {
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+  }
+  .event {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+  }
+
+  .event_list {
+    margin-top: 0;
+  }
+  .second_page_left a {
+    background-color: #fff;
+    font-size: 20px;
+    padding: 20px 10px;
+    border: 1px solid #44413d;
+  }
+  .second_page_right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .transfer {
+    color: #000000;
+    padding: 8px 15px;
+    font-size: 20px;
+  }
+  .card_text {
+    font-size: 20px;
+  }
+  .card_info {
+    color: #44413d;
+    margin-bottom: 30px;
+    display: flex;
+  }
+  .message {
+    margin-left: 30px;
+  }
+  .display_btn {
+    margin: 30px auto 0px auto;
+    text-align: center;
+  }
+  .display_btn button {
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: red;
+    border: 1px solid rgba(15, 15, 15, 0.452);
+    font-size: 20px;
+  }
+
+  /* website 2 design */
+
+  .second_page_right_event {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* ==============================
+               Footer Design  
+  ============================*/
+  footer {
+    height: auto;
+  }
+  .footer_text {
+    padding-top: 50px;
+  }
+  hr {
+    width: 90%;
+  }
+  ul {
+    flex-wrap: wrap;
+    margin: 40px 10px;
+  }
+  ul li {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1400px) {
+  .first-page {
+    margin: 40px 20px;
+    height: auto;
+  }
+  .left_side {
+    width: 100%;
+  }
+  .right_side {
+    width: 100%;
+  }
+  .content_left {
+    padding-right: 0;
+    margin: 88px 0;
+  }
+  .left_side_title {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  .left_side_text {
+    font-size: 18px;
+    width: 90%;
+  }
+  .live_btn {
+    padding: 15px 22px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .right_side {
+    width: 100%;
+    max-height: 100%;
+  }
+  .right_side img {
+    width: 100%;
+    height: 486px;
+    margin-top: 100px;
+    padding: 0;
+  }
+  /*========================== 
+  Second Page Events styles
+  ============================ */
+
+  .second_page {
+    color: antiquewhite;
+    margin: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .second_page_left {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    height: auto;
+  }
+  .event {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .event_list {
+    margin-top: 0;
+  }
+  .second_page_left a {
+    background-color: #fff;
+    font-size: 20px;
+    padding: 20px 10px;
+    border: 1px solid #44413d;
+    width: 175px;
+  }
+  .second_page_right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .transfer {
+    color: #000000;
+    padding: 8px 15px;
+    font-size: 20px;
+  }
+  .card_text {
+    font-size: 20px;
+  }
+  .card_info {
+    color: #44413d;
+    margin-bottom: 30px;
+    display: flex;
+  }
+  .message {
+    margin-left: 30px;
+  }
+  .display_btn {
+    display: none;
+  }
+
+  /* ==============================
+             Footer Design  
+  =============================*/
+  footer {
+    height: auto;
+  }
+  .footer_text {
+    padding-top: 70px;
+  }
+  hr {
+    width: 90%;
+  }
+  ul {
+    flex-wrap: wrap;
+    margin: 40px 10px;
+  }
+  ul li {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 1401px){
+  .display_btn {
+    display: none;
+  }
+}
